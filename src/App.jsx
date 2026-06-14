@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage';
 import Layout from './components/Layout';
 import RegisterPage from './pages/RegisterPage';
 import ProtectedRoute from './components/ProtectedRoute';
+import CalloryControl from './pages/CalloryControl';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
   <Route path="/login" element={<RegisterPage />} />
   <Route element={<ProtectedRoute><Layout /></ProtectedRoute>}>
     <Route path="/" element={<HomePage />} />
+    <Route path='/callory' element ={<CalloryControl />}/>
   </Route>
 </Routes>
     </>

@@ -9,9 +9,7 @@ function Header(){
         <NavLink to="/" end className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
           Главная
         </NavLink>
-        <NavLink
-          className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-        >
+        <NavLink to= "/callory" end className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
           Контроль каллорий 
         </NavLink>
       </nav>
